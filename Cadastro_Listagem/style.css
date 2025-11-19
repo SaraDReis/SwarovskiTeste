@@ -1,0 +1,501 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Julius Sans One", sans-serif;
+}
+
+
+body {
+    margin: 0;
+}
+
+
+
+/* HEADER */
+
+
+header {
+    justify-items: center;
+    height: 200px;
+    background: linear-gradient(96deg, rgba(0, 37, 55, 1) 0%, rgba(0, 71, 107, 1) 100%);
+}
+
+
+
+
+
+.container_cabeçalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* background-color: aqua; */
+
+
+    max-width: 1440px;
+    height: 100%;
+    width: 100%;
+
+}
+
+.conteudo_cabeçalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* background-color: blueviolet; */
+
+    width: 25%;
+    height: 100%;
+
+    position: absolute;
+    left: 0
+}
+
+
+.seta {
+    width: 60px;
+    cursor: pointer;
+    color: white;
+
+    margin-right: 15px;
+}
+
+.seta_cadastro {
+    display: none;
+}
+
+header .logo {
+    height: 45px;
+    cursor: pointer;
+    justify-self: center;
+}
+
+.conteudo_cabeçalho img {
+    height: 200px;
+
+}
+
+
+/* ACESSIVEL */
+
+.acessivel {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+/* CADASTRO */
+body {
+    background-color: #F5F5F5;
+}
+
+
+
+h2 {
+    font-size: 40px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+
+    margin: 25px 0;
+}
+
+.container_cadastro {
+    width: 100%;
+
+    background-color: #01476B;
+    height: 700px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: column;
+}
+
+
+
+.box_cadastro {
+    /* background-color: aqua; */
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1440px;
+
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+
+
+.coluna_cadastro1 {
+
+    width: 45%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.coluna_cadastro2 {
+    /* background-color: blueviolet; */
+    width: 45%;
+
+    display: flex;
+    flex-direction: column;
+}
+ 
+.cor{
+      width: 70%;
+}
+
+.cor_img {
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+}
+
+.img {
+  width: 20%;
+}
+
+.img_input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    cursor: pointer;
+    background-color: blueviolet;
+}
+
+input[type="text"] {
+    border-radius: 10px;
+    height: 60px;
+}
+
+textarea {
+    resize: none;
+    height: 300px;
+    border-radius: 15px;
+}
+
+input,
+textarea {
+    font-size: 20px;
+    background-color: #F5F5F5;
+}
+
+input[type="text"],
+textarea {
+    padding: 20px 15px;
+    border: solid 0.5px;
+}
+
+input[type="text"]::placeholder,
+textarea::placeholder {
+
+    color: #ACACAC;
+    font-size: 20px;
+
+}
+
+
+label,
+input[type="button"] {
+
+    font-size: 30px;
+    color: white;
+
+}
+
+label {
+    margin-top: 25px;
+}
+
+input[type="button"] {
+
+    height: 60px;
+    width: 90%;
+    max-width: 1400px;
+
+    background-color: #002537;
+    border-radius: 10px;
+    border: solid 0.5px;
+    margin-bottom: 90px;
+
+    cursor: pointer;
+}
+
+
+
+/*LISTAGEM*/
+
+h2 {
+    justify-self: center;
+}
+
+
+.container_lista {
+    width: 100%;
+    text-align: center;
+    background: #01476B;
+    justify-self: center;
+}
+
+.container_lista h2 {
+    background-color: #F1F3EF;
+    padding: 40px 0;
+}
+
+/* CARDS */
+.cards {
+    padding-top: 100px;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+.card {
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 1px;
+
+    margin-bottom: 90px;
+    box-shadow: 0 4px 4px 2px #00000025;
+}
+
+p {
+    font-family: "Kaisei Tokumin", serif;
+}
+
+.card p {
+
+    padding: 20px;
+}
+
+.cards svg {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.descrição {
+    color: #525252;
+}
+
+
+/* RODAPE */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+
+    background: linear-gradient(96deg, rgba(0, 37, 55, 1) 0%, rgba(0, 71, 107, 1) 100%);
+
+}
+
+footer .logo {
+    height: 40px;
+}
+
+
+/* MEDIA */
+
+@media screen and (max-width: 1000px) {
+
+    /* HEADER MEDIA */
+
+    .titulo_cadastro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .seta {
+        display: none;
+    }
+
+
+    .seta_cadastro {
+        display: block;
+        width: 45px;
+        cursor: pointer;
+        margin-right: 30px;
+    }
+
+
+
+    /* CADASTRO MEDIA */
+
+    label {
+        font-size: 20px;
+    }
+
+    input[type="text"]::placeholder,
+    textarea::placeholder {
+        font-size: 15px;
+    }
+
+    input,
+    textarea {
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+/* MEDIA */
+
+@media screen and (max-width:770px) {
+
+    /* HEADER MEDIA */
+
+    header {
+        height: 130px;
+    }
+
+    header .logo {
+        height: 30px;
+    }
+
+    .conteudo_cabeçalho img {
+        height: 120px;
+    }
+
+    .seta_cadastro {
+        width: 20px;
+
+    }
+
+
+
+
+    /* CADASTRO MEDIAS */
+
+    main {
+        justify-items: center;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .container_cadastro {
+        display: flex;
+        justify-content: center;
+    }
+
+    .coluna_cadastro1,
+    .coluna_cadastro2 {
+        width: 100%;
+    }
+
+    .box_cadastro {
+        width: 98%;
+        flex-direction: column;
+
+
+
+        padding-top: 30px;
+    }
+
+    textarea {
+        height: 200px;
+
+    }
+
+    input[type="button"] {
+        padding: 10px 0;
+        font-size: 20px;
+        margin-top: 60px;
+
+    }
+
+    .container_cadastro {
+        border-radius: 30px;
+        width: 90%;
+
+
+    }
+
+
+
+
+
+    /* CARDS */
+    .cards {
+
+        width: 100%;
+        max-width: 1440px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10%;
+        justify-content: center;
+        padding: 70px 20px;
+    }
+}
+
+
+
+@media screen and (max-width:500px) {
+
+    /* HEADER MEDIA */
+
+    header .logo {
+        height: 20px;
+    }
+
+    .conteudo_cabeçalho img {
+        height: 100px;
+    }
+
+    img {
+
+        height: 150px;
+    }
+
+    .logo {
+
+        height: 100px;
+    }
+
+    .container_lista {
+        border-radius: 30px;
+        width: 90%;
+        padding: 0 15px;
+        margin-bottom: 60px;
+    }
+
+
+    footer {
+        height: 130px;
+    }
+
+    footer .logo {
+        height: 30px;
+    }
+}
