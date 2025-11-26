@@ -5,7 +5,21 @@
 }
 
 
+:root {
+--corBackground:#F5F5F5;
+
+/*MODO ESCURO*/
+ 
+--corHeaderMDEscuro: linear-gradient(96deg, rgba(0, 37, 55, 1) 0%, rgb(0 0 0) 100%);
+--corBackgroundMDEscuro: #9d9d9d ;
+--corEscuraMDEscuro: #030c11;
+--corInputMDEscuro: #3e3e3e;
+
+
+}
+
 body {
+    background-color: var(--corBackground);
     margin: 0;
 }
 
@@ -27,7 +41,7 @@ header {
 .container_cabeçalho {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     /* background-color: aqua; */
 
@@ -38,31 +52,24 @@ header {
 
 }
 
-.conteudo_cabeçalho {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    /* background-color: blueviolet; */
-
-    width: 25%;
-    height: 100%;
-
-    position: absolute;
-    left: 0
-}
 
 
-.seta {
+
+.menu_hamburguer {
     width: 60px;
     cursor: pointer;
     color: white;
 
-    margin-right: 15px;
+    margin-left: 15px;
 }
 
+
 .seta_cadastro {
-    display: none;
+    width: 40px;
+    cursor: pointer;
+ 
+
+    margin-right: 15px;
 }
 
 header .logo {
@@ -71,8 +78,8 @@ header .logo {
     justify-self: center;
 }
 
-.conteudo_cabeçalho img {
-    height: 200px;
+.container_cabeçalho img {
+    height: 160px;
 
 }
 
@@ -89,8 +96,10 @@ header .logo {
 }
 
 /* CADASTRO */
-body {
-    background-color: #F5F5F5;
+
+.cadastro{
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -152,12 +161,14 @@ h2 {
  
 .cor{
       width: 70%;
+      display: flex;
+      flex-direction: column;
 }
 
-.cor_img {
+.preço_img {
     display: flex;
     justify-content: space-between;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .img {
@@ -168,10 +179,35 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
+   
     cursor: pointer;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
+
+
+ 
+.upload{
+    background-color: #F5F5F5;
+      border-radius: 10px;
+       height: 60px;
+       border: solid 1px #000;
+}
+
+
+.upload svg{
+    color: #ACACAC;
+    width: 35px;
+    display: flex;
+    justify-self: center;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+input[type="file"]{
+    display:none;
+}
+
+
 
 input[type="text"] {
     border-radius: 10px;
@@ -332,17 +368,10 @@ footer .logo {
         justify-content: center;
     }
 
-    .seta {
-        display: none;
-    }
+   
 
 
-    .seta_cadastro {
-        display: block;
-        width: 45px;
-        cursor: pointer;
-        margin-right: 30px;
-    }
+   
 
 
 
@@ -374,6 +403,10 @@ footer .logo {
 
     /* HEADER MEDIA */
 
+    img{
+
+    }
+
     header {
         height: 130px;
     }
@@ -382,12 +415,12 @@ footer .logo {
         height: 30px;
     }
 
-    .conteudo_cabeçalho img {
+    .container_cabeçalho img {
         height: 120px;
     }
 
-    .seta_cadastro {
-        width: 20px;
+   .menu_hamburguer {
+        width: 40px;
 
     }
 
@@ -395,6 +428,17 @@ footer .logo {
 
 
     /* CADASTRO MEDIAS */
+     .seta_cadastro {
+        display: block;
+        width: 30px;
+        cursor: pointer;
+        margin-right: 30px;
+    }
+
+    .container_cabeçalho img {
+    height: 120px;
+
+}
 
     main {
         justify-items: center;
@@ -407,6 +451,7 @@ footer .logo {
     .container_cadastro {
         display: flex;
         justify-content: center;
+        height: auto;
     }
 
     .coluna_cadastro1,
@@ -429,7 +474,6 @@ footer .logo {
     }
 
     input[type="button"] {
-        padding: 10px 0;
         font-size: 20px;
         margin-top: 60px;
 
@@ -469,8 +513,8 @@ footer .logo {
         height: 20px;
     }
 
-    .conteudo_cabeçalho img {
-        height: 100px;
+    .container_cabeçalho img {
+        height: 80px;
     }
 
     img {
