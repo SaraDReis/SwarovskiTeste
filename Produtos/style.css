@@ -8,77 +8,127 @@
 :root {
 --corBackground:#F5F5F5;
 
+/*MODO ESCURO*/
+ 
+--corHeaderMDEscuro: linear-gradient(96deg, rgba(0, 37, 55, 1) 0%, rgb(0 0 0) 100%);
+--corBackgroundMDEscuro: #9d9d9d ;
+--corDFundoMDEscuro: #030c11;
+--corInputMDEscuro: #3e3e3e;
+
+
 }
 
 /* HEADER*/
 
+
 header {
-  height: 200px;
-  background: linear-gradient(96deg, rgba(0, 37, 55, 1) 0%, rgba(0, 71, 107, 1) 100%);
-}
-
-body {
-  background-color: var(--corBackground);
+    justify-items: center;
+    height: 200px;
+    background: linear-gradient(96deg, rgba(0, 37, 55, 1) 0%, rgba(0, 71, 107, 1) 100%);
 }
 
 
-.container {
-  display: flex;
-  align-items: center;
-
-  /* background-color: aqua; */
 
 
-  max-width: 1440px;
-  height: 100%;
-  width: 100%;
+
+.container_cabeçalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* background-color: aqua; */
+
+
+    max-width: 1440px;
+    height: 100%;
+    width: 100%;
 
 }
 
+.conteudo_cabeçalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-.conteudo {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    /* background-color: blueviolet; */
 
-  /* background-color: blueviolet; */
+    width: 25%;
+    height: 100%;
 
-  width: 80%;
-  height: 100%;
+    position: absolute;
+    left: 0
 }
 
 
 .seta {
-  width: 40px;
-  width: 60px;
-  cursor: pointer;
-  color: white;
+    width: 60px;
+    cursor: pointer;
+    color: white;
 
-  margin-right: 15px;
+    margin-right: 15px;
+}
+
+.seta_cadastro {
+    display: none;
+}
+
+header .logo {
+    height: 45px;
+    cursor: pointer;
+    justify-self: center;
+}
+
+.conteudo_cabeçalho img {
+    height: 200px;
+
 }
 
 
-.logo {
-  height: 60px;
+/* ACESSIVEL */
 
+.acessivel {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
 }
 
 
-img {
-  height: 200px;
+
+  .banner_pesquisa{
+    display: flex;
+    align-items: center;
+  }
+  .banner_pesquisa input{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .lupa{
+    height: 24px;
+    position: absolute;
+   margin: 10px;
+    color: #b0b0b0;
+  }
+  input[type="text"]{
+  border-radius: 10px;
+  width: 400px;
+  height: 40px;
+ border: solid 1px ;
+ padding-left: 45px;
 }
+ 
 
-
-
+.Ariana {
+  height: 300px;
+}
 
 
 
 /*CARDS*/
 
-
-.Ariana {
-  height: 300px;
-}
 
 
 .cards {
