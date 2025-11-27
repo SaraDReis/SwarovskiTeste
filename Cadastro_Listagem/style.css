@@ -64,13 +64,7 @@ header {
 }
 
 
-.seta_cadastro {
-    width: 40px;
-    cursor: pointer;
- 
 
-    margin-right: 15px;
-}
 
 header .logo {
     height: 45px;
@@ -97,11 +91,13 @@ header .logo {
 
 /* CADASTRO */
 
-.cadastro{
-    display: flex;
-    justify-content: center;
+  
+.seta_cadastro {
+    width: 40px;
+    cursor: pointer;
+    margin-right: 15px;
+    
 }
-
 
 
 h2 {
@@ -109,7 +105,6 @@ h2 {
     font-weight: lighter;
     display: flex;
     justify-content: center;
-
     margin: 25px 0;
 }
 
